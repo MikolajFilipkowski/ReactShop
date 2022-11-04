@@ -18,11 +18,9 @@ function ExpenseItem(props) {
     <div className="container">
       <div className="description">
         <h2> {title} </h2>
+        <ExpenseDate date={props.date} />
         <div className="price">{props.price} PLN </div>
-        <div>
-          <ExpenseDate date={props.date} />
-        </div>
-        <button onClick={clickHandler}>zmieniacz tytułu</button>
+        <button onClick={clickHandler}>Dodaj do koszyka</button>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const ExpenseForm = (props) => {
 
   return (
     <form onSubmit={submitHandler} className='container' id='form'>
-      <div  >
+      <div>
         <label > Title </label>
         <input type="text"
           onChange={titleChangeHandler}
